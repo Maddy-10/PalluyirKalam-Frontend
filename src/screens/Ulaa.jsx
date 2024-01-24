@@ -298,10 +298,10 @@ import UlaaEnglish from './english/UlaaEnglish'
 import { Language } from '../hooks/Language'
 
 const Ulaa = () => {
-  const{loading}=useContext(Language)
+  const{language}=useContext(Language)
   return (
     <>
-    {loading?<UlaaTamil/>:<UlaaEnglish/>}
+  {language?<UlaaTamil/>:<UlaaEnglish/>}
     </>
   )
 }
